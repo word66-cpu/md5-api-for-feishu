@@ -1,0 +1,9 @@
+{
+  "name": "md5-api",
+  "version": "1.0.0",
+  "description": "Simple MD5 API for Feishu",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  },
+  "dependencies": {}
+}
