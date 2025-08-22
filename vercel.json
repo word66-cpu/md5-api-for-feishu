@@ -1,15 +1,14 @@
 {
-  "version": 2,
   "builds": [
     {
-      "src": "api/md5.js",
-      "use": "@vercel/node"
+      "src": "package.json",  // 指向包含build脚本的文件
+      "use": "@vercel/node"   // 根据项目类型选择正确的构建器
     }
   ],
   "routes": [
     {
-      "src": "/api/md5",
-      "dest": "/api/md5.js"
+      "src": "/(.*)",
+      "dest": "index.js"      // 确保指向正确的入口文件
     }
   ]
 }
