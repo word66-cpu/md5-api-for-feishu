@@ -1,23 +1,7 @@
 {
   "functions": {
-    "api-md5.js": {
+    "api/md5.js": {
       "maxDuration": 10
     }
-  },
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/md5",
-      "destination": "/api-md5.js"
-    }
-  ]
+  }
 }
