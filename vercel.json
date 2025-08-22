@@ -1,7 +1,15 @@
 {
-  "functions": {
-    "api/md5.js": {
-      "maxDuration": 10
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/md5.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/md5",
+      "dest": "/api/md5.js"
+    }
+  ]
 }
